@@ -8,7 +8,7 @@ Installation
 
 - Install this module using [the official Backdrop CMS instructions](https://backdropcms.org/guide/modules).
 
-- There is no configuration required. Modules that use TCPDF should include this module in their dependencies and make their calls directly to the TCPDF class. See, for example, the [Webform2PDF module](https://backdropcms.org/project/webform2pdf) for an example implementation.
+- There is no configuration required. Modules that use TCPDF should include this module in their dependencies and make their calls directly to the TCPDF class. See the [Webform2PDF module](https://backdropcms.org/project/webform2pdf) for an example implementation.
 
 Issues
 ------
