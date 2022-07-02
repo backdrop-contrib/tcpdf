@@ -1,0 +1,4 @@
+name = TCPDF
+description = Wrapper module for the TCPDF library.
+backdrop = 1.x
+type = module

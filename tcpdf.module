@@ -1,0 +1,8 @@
+<?php
+/**
+ * @file
+ * Provides the TCPDF library to other modules.
+ */
+
+// No functions defined. Other modules should include files from the tcpdf
+// subdirectory as needed.
