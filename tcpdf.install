@@ -1,0 +1,33 @@
+<?php
+/**
+ * @file
+ *   TCPDF module install/schema hooks.
+ */
+
+/**
+ * Implements hook_requirements().
+ */
+function tcpdf_requirements($phase) {
+  if ($phase == 'runtime') {
+    $version = file_get_contents(backdrop_get_path('module', 'tcpdf') . '/tcpdf/VERSION');
+    if ($version) {
+      return array(
+        'tcpdf_version' => array(
+          'title' => t('TCPDF'),
+          'value' => t('Version: @version.', array('@version' => trim($version))),
+          'severity' => REQUIREMENT_INFO,
+        ),
+      );
+    }
+    else {
+      return array(
+        'tcpdf_version' => array(
+          'title' => t('TCPDF'),
+          'value' => t('The TCPDF library is missing from the tcpdf module.'),
+          'severity' => REQUIREMENT_ERROR,
+        ),
+      );
+    }
+  }
+  return array();
+}
